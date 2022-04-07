@@ -466,3 +466,5 @@ images:
   scout:
     repository: scout
     digest: sha256:7344e929af64886a4a51de4ccce628a16e2fe40b23517b0c01339a6c3dd8136b
+
+useExistingSecrets: true

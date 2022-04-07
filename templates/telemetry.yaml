@@ -1,3 +1,4 @@
+{{- if not .Values.useExistingSecrets }}
 apiVersion: v1
 kind: Secret
 metadata:
@@ -8,3 +9,4 @@ type: Opaque
 data:
   apiKey: {{ default "" .Values.telemetry.apiKey | b64enc | quote }}
   publicKey: {{ default "" .Values.telemetry.publicKey | b64enc | quote }}
+{{- end }}
